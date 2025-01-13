@@ -7,19 +7,17 @@ A simple Bingo Game Book Generator that creates printable Bingo cards using the 
 The game is played by two or more players, each having an individual Bingo card, which is a 10x10 grid with randomly placed numbers from 1 to 100.
 
 The game proceeds as follows:
-
-    Starting the game: The first player calls out a number between 1 and 100. All players then check their cards and mark the number.
-
-    Taking turns: The second player calls out a number, and the process repeats, with each player taking turns to announce a number. After a number is called, all players mark it on their cards.
-
-    Winning the game: The first player to complete 5 rows and 5 columns of marked numbers on their card wins.
+	Starting the game: The first player calls out a number between 1 and 100. All players then check their cards and mark the number.
+	Taking turns: The second player calls out a number, and the process repeats, with each player taking turns to announce a number. After a number is called, all players mark it on their cards.
+	Note: You can't repeat already called numbers. All called numbers should be marked and not repeat. You can't skip turns.
+	Winning the game: The first player to complete 5 rows and 5 columns of marked numbers on their card wins.
 
 # Requirements and supporting platforms
 
 I'm a bit lazy, so in this repository, you'll only find a solution file with project files for Visual Studio. My setup specifications are as follows:
-    Visual Studio Community 2022 (64-bit), version 17.12.0
-    Windows 10 Pro 22H2
-    C++ 20
+	Visual Studio Community 2022 (64-bit), version 17.12.0
+	Windows 10 Pro 22H2
+	C++ 20
 
 If you're a Linux user, I’ve handled the Windows-specific parts in the laziest way possible. Instead of using a file save dialog, the window where you choose where to save the PDF is replaced by manually entering the file path and name (e.g., somepath/output.pdf).
 
