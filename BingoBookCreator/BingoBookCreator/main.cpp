@@ -1,11 +1,22 @@
+/*
 #include <windows.h>
 #include <commdlg.h>
 #include <iostream>
 
 #include <locale>
 #include <codecvt>
+*/
+#include "BingoBook.h"
 
+int main()
+{
+	BingoBook bingoBook;
+	bingoBook.CreatePDF();
 
+	return 0;
+}
+
+/*
 #pragma warning (disable:4996)
 wchar_t* GetSaveFileNameFromDialog() {
 	// Initialize OPENFILENAME structure
@@ -49,7 +60,7 @@ int main() {
 
 	std::cout << "Converted string: " << str << std::endl;
 
-	if (!str.empty() && str != "Bingo Book" /*The default name. It will come this way if we cancled the dialog.*/ ) {
+	if (!str.empty() && str != "Bingo Book" /*The default name. It will come this way if we cancled the dialog.* / ) {
 		std::cout << "Selected file path: " << str << std::endl;
 	} else {
 		std::cout << "No file selected or error occurred." << std::endl;
@@ -59,7 +70,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 
 /*
