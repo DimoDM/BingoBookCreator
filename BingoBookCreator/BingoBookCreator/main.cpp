@@ -6,71 +6,17 @@
 #include <locale>
 #include <codecvt>
 */
+
+
 #include "BingoBook.h"
 
 int main()
 {
-	BingoBook bingoBook;
+	BingoBook bingoBook( 1, 2, "D:/Development/output_table.pdf" );
 	bingoBook.CreatePDF();
 
 	return 0;
 }
-
-/*
-#pragma warning (disable:4996)
-wchar_t* GetSaveFileNameFromDialog() {
-	// Initialize OPENFILENAME structure
-	OPENFILENAME ofn;        // Common dialog box structure
-	wchar_t* szFile = new wchar_t [ MAX_PATH ] {'B', 'i', 'n', 'g', 'o', ' ', 'B', 'o', 'o', 'k'};  // Buffer for file name (use wchar_t for wide characters)
-
-	// Initialize OPENFILENAME to zero
-	ZeroMemory(&ofn, sizeof(ofn));
-	ofn.lStructSize = sizeof(ofn);  // Must be set to the size of the OPENFILENAME structure
-	ofn.hwndOwner = NULL;  // Handle to the owner window (NULL for no parent)
-	ofn.lpstrFile = szFile;  // Buffer for the file name
-	ofn.nMaxFile = (sizeof(*szFile) * MAX_PATH)/ sizeof(szFile[0]); // Size of the buffer (in wchar_t units)
-	ofn.lpstrFilter = L"PDF Files\0*.PDF\0All Files\0*.*\0"; // File filter (wide string)
-	ofn.nFilterIndex = 1;  // Filter index (1 means the first filter, i.e., Text Files)
-	ofn.lpstrFileTitle = NULL; // File title (not used)
-	ofn.nMaxFileTitle = 0; // Size of the file title buffer (not used)
-	ofn.lpstrInitialDir = NULL; // Initial directory (NULL means use the current directory)
-	ofn.lpstrTitle = L"Save As"; // Dialog title
-	ofn.Flags = OFN_OVERWRITEPROMPT | OFN_LONGNAMES;  // Simplified flags
-
-	// Display the Save As dialog box
-	if (GetSaveFileName(&ofn) == TRUE) {
-		
-		return szFile; // Return the selected file path
-	} else {
-		DWORD dwError = CommDlgExtendedError(); // Get the error code
-		if (dwError != 0) {
-			std::wcerr << L"Error code: " << dwError << std::endl;
-		}
-		return szFile; // No file selected or error occurred
-	}
-}
-
-int main() {
-	wchar_t* fp = GetSaveFileNameFromDialog();
-	std::wstring filePath = fp;
-	// Manually convert wstring to string
-	// Convert wstring to string (UTF-8 encoding)
-	std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
-	std::string str = converter.to_bytes(filePath);  // Convert to std::string
-
-	std::cout << "Converted string: " << str << std::endl;
-
-	if (!str.empty() && str != "Bingo Book" /*The default name. It will come this way if we cancled the dialog.* / ) {
-		std::cout << "Selected file path: " << str << std::endl;
-	} else {
-		std::cout << "No file selected or error occurred." << std::endl;
-	}
-
-	delete[] fp;
-
-	return 0;
-}
-*/
 
 
 /*

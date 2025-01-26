@@ -1,5 +1,6 @@
 #include "BingoBook.h"
 #include <iostream>
+#include <vector>
 #ifdef _WIN64
 #include <windows.h>
 #include <codecvt>
@@ -53,6 +54,35 @@ bool BingoBook::IsAbleToCreate()
 
 bool BingoBook::CreatePDF()
 {
+	if ( !this->IsAbleToCreate() )
+	{
+		return false;
+	}
+
+	HPDF_Doc pdf = HPDF_New(NULL, NULL);
+	if (!pdf) {
+		std::cerr << "Error creating PDF document" << std::endl;
+		return 1;
+	}
+
+	// Create a new page
+	HPDF_Page page = HPDF_AddPage(pdf);
+
+	// Set page size (A4)
+	HPDF_Page_SetSize(page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT);
+
+	// Add table to the PDF
+	this->AddTable(pdf, page, 500, 0, 50);
+
+	// Save the PDF to a file
+	const char* output_file = "D:/Development/output_table.pdf";
+	HPDF_SaveToFile(pdf, output_file);
+
+	// Clean up and release resources
+	HPDF_Free(pdf);
+
+	std::cout << "PDF with table created successfully: " << output_file << std::endl;
+
 
 	return false;
 }
@@ -153,4 +183,28 @@ std::string BingoBook::GetFileLocation()
 
 
 	return fileLocation;
+}
+
+void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, float cell_size )
+{
+	// Setting font and size
+	HPDF_Font font = HPDF_GetFont(pdf, "Helvetica", NULL);
+	HPDF_Page_SetFontAndSize(page, font, 12);
+
+	// Data rows
+	std::vector<const char*> rows = 
+	{"1", "Viki", "28", "2", "Jane Smith", "34", "3", "Emily Johnson", "22"};
+
+	size_t index = 0;
+
+	for (int i = 0; i < 3; ++i) {
+		for (int j = 0; j < 3 && index < rows.size(); ++j) {
+			HPDF_Page_Rectangle(page, left + j * cell_size, top - (i + 1) * cell_size, cell_size, cell_size);
+			HPDF_Page_Stroke(page);
+			HPDF_Page_BeginText(page);
+			HPDF_Page_TextOut(page, left + j * cell_size + 5, top - (i + 1) * cell_size + 5, rows[index]);
+			HPDF_Page_EndText(page);
+			index++;
+		}
+	}
 }
