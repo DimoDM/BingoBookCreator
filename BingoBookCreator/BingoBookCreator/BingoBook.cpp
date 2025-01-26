@@ -194,7 +194,7 @@ void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, f
 {
 	// Setting font and size
 	HPDF_Font font = HPDF_GetFont( pdf, "Helvetica", NULL );
-	HPDF_Page_SetFontAndSize( page, font, 40 );
+	HPDF_Page_SetFontAndSize( page, font, 32 );
 
 	// Data rows
 	std::vector<std::string> rows =	// I will make chatGPT my bitch (this array is not written by me)
@@ -233,6 +233,8 @@ void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, f
 			return result;
 		};
 
+	std::string currentNum;
+
 	for ( int i = 0; i < 10; ++i )
 	{
 		for ( int j = 0; j < 10 && !rows.empty(); ++j )
@@ -240,7 +242,16 @@ void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, f
 			HPDF_Page_Rectangle( page, left + j * cell_size, top - ( i + 1 ) * cell_size, cell_size, cell_size );
 			HPDF_Page_Stroke( page );
 			HPDF_Page_BeginText( page );
-			HPDF_Page_TextOut( page, left + j * cell_size + 5, top - ( i + 1 ) * cell_size + 10, GetElementsAtRandomAndExclude().c_str() );
+
+			currentNum = GetElementsAtRandomAndExclude();
+			if( currentNum.length() < 3)
+			HPDF_Page_TextOut( page, left + j * cell_size + 8, top - ( i + 1 ) * cell_size + 13, currentNum.c_str() );
+			else
+			{
+				//HPDF_Page_SetFontAndSize( page, font, 32 );
+				HPDF_Page_TextOut( page, left + j * cell_size - 1.5, top - ( i + 1 ) * cell_size + 15, currentNum.c_str() );
+				//HPDF_Page_SetFontAndSize( page, font, 40 );
+			}
 			HPDF_Page_EndText( page );
 		}
 	}
