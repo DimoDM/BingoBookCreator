@@ -1,6 +1,7 @@
 #include "BingoBook.h"
 #include <iostream>
 #include <vector>
+#include <random>
 #ifdef _WIN64
 #include <windows.h>
 #include <codecvt>
@@ -59,32 +60,35 @@ bool BingoBook::CreatePDF()
 		return false;
 	}
 
-	HPDF_Doc pdf = HPDF_New(NULL, NULL);
-	if (!pdf) {
+	HPDF_Doc pdf = HPDF_New( NULL, NULL );
+	if ( !pdf )
+	{
 		std::cerr << "Error creating PDF document" << std::endl;
-		return 1;
+		return false;
 	}
 
 	// Create a new page
-	HPDF_Page page = HPDF_AddPage(pdf);
+	HPDF_Page page = HPDF_AddPage( pdf );
 
 	// Set page size (A4)
-	HPDF_Page_SetSize(page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT);
+	HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
 
 	// Add table to the PDF
-	this->AddTable(pdf, page, 500, 0, 50);
+	//{(HPDF_REAL)595.276, (HPDF_REAL)841.89},     /* HPDF_PAGE_SIZE_A4 */
+	float cell_size = 52;
+	this->AddTable( pdf, page, 841.89 - ((841.89 - (cell_size * 10))  / 2), (595.276 - (cell_size * 10))  / 2, cell_size );
 
 	// Save the PDF to a file
 	const char* output_file = "D:/Development/output_table.pdf";
-	HPDF_SaveToFile(pdf, output_file);
+	HPDF_SaveToFile( pdf, output_file );
 
 	// Clean up and release resources
-	HPDF_Free(pdf);
+	HPDF_Free( pdf );
 
 	std::cout << "PDF with table created successfully: " << output_file << std::endl;
 
 
-	return false;
+	return true;
 }
 
 #ifdef _WIN64
@@ -185,26 +189,59 @@ std::string BingoBook::GetFileLocation()
 	return fileLocation;
 }
 
+#include<algorithm>
 void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, float cell_size )
 {
 	// Setting font and size
-	HPDF_Font font = HPDF_GetFont(pdf, "Helvetica", NULL);
-	HPDF_Page_SetFontAndSize(page, font, 12);
+	HPDF_Font font = HPDF_GetFont( pdf, "Helvetica", NULL );
+	HPDF_Page_SetFontAndSize( page, font, 40 );
 
 	// Data rows
-	std::vector<const char*> rows = 
-	{"1", "Viki", "28", "2", "Jane Smith", "34", "3", "Emily Johnson", "22"};
+	std::vector<std::string> rows =	// I will make chatGPT my bitch (this array is not written by me)
+	{	"29",	"86",	"23",	" 2",	"65",	"97",	"92", "40", "37", "61"	,
+		"60",	"57",	"78",	" 9",	"15",	"53",	"98", "70", "55", "80"	,
+		"36",	"48",	"77",	"28",	"95",	"59",	"13", "44", "35", "17"	,
+		"50",	"64",	"18",	"41",	"62",	" 1",	"71", "72", "33", "81"	,
+		"75",	"67",	" 8",	"89",	" 3",	"69",	"74", "22", "42", "47"	,
+		"14",	"82",	"38",	"24",	"16",	"30",	"31", "34", "51", "46"	,
+		"25",	"73",	"43",	"49",	"93",	"56",	"11", "79", "58", " 4"	,
+		"39",	"63",	"21",	"90",	"27",	"76",	"32", "20", "83", "85"	,
+		"12",	"26",	" 5",	"94",	"84",	" 7",	"68", "66", "91", " 6"	,
+		"19",	"52",	"45",	"100",	"87",	"88",	"10", "54", "99", "96" };
 
-	size_t index = 0;
+	std::random_device	rd; // Obtain a random seed
+	std::mt19937		gen(rd()); // Initialize Mersenne Twister with the seed
 
-	for (int i = 0; i < 3; ++i) {
-		for (int j = 0; j < 3 && index < rows.size(); ++j) {
-			HPDF_Page_Rectangle(page, left + j * cell_size, top - (i + 1) * cell_size, cell_size, cell_size);
-			HPDF_Page_Stroke(page);
-			HPDF_Page_BeginText(page);
-			HPDF_Page_TextOut(page, left + j * cell_size + 5, top - (i + 1) * cell_size + 5, rows[index]);
-			HPDF_Page_EndText(page);
-			index++;
+	const auto Swap = [] ( std::string& lhs, std::string& rhs )
+		{
+			std::string swap = lhs;
+			lhs = rhs;
+			rhs = swap;
+		};
+
+	const auto GetElementsAtRandomAndExclude = [ &rows, &gen, &Swap ] () -> std::string
+		{
+			// Define the range [2, 87]
+			std::uniform_int_distribution<> dis( 0, rows.size() - 1 );
+			int random_number = dis( gen );
+			if ( random_number != rows.size() - 1 )
+			{
+				Swap( rows[ random_number ], rows.back() );
+			}
+			std::string result = rows.back();
+			rows.pop_back();
+			return result;
+		};
+
+	for ( int i = 0; i < 10; ++i )
+	{
+		for ( int j = 0; j < 10 && !rows.empty(); ++j )
+		{
+			HPDF_Page_Rectangle( page, left + j * cell_size, top - ( i + 1 ) * cell_size, cell_size, cell_size );
+			HPDF_Page_Stroke( page );
+			HPDF_Page_BeginText( page );
+			HPDF_Page_TextOut( page, left + j * cell_size + 5, top - ( i + 1 ) * cell_size + 10, GetElementsAtRandomAndExclude().c_str() );
+			HPDF_Page_EndText( page );
 		}
 	}
 }
