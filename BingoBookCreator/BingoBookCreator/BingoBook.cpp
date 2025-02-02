@@ -307,9 +307,7 @@ void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, const TableInfo& tInfo )
 			HPDF_Page_TextOut( page, tInfo.left + j * tInfo.cellSize + tInfo.nXMargin, tInfo.top - ( i + 1 ) * tInfo.cellSize + tInfo.nYMargin, currentNum.c_str() );
 			else
 			{
-				//HPDF_Page_SetFontAndSize( page, font, 32 );
 				HPDF_Page_TextOut( page, tInfo.left + j * tInfo.cellSize + tInfo.hXMargin, tInfo.top - ( i + 1 ) * tInfo.cellSize + + tInfo.hYMargin, currentNum.c_str() );
-				//HPDF_Page_SetFontAndSize( page, font, 40 );
 			}
 			HPDF_Page_EndText( page );
 		}
