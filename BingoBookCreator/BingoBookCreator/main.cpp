@@ -12,7 +12,7 @@
 
 int main()
 {
-	BingoBook bingoBook( 1, 2, "D:/Development/output_table.pdf" );
+	BingoBook bingoBook( 1, 3, "D:/Development/output_table.pdf" );
 	bingoBook.CreatePDF();
 
 	return 0;

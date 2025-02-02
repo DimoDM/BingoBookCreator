@@ -68,18 +68,49 @@ bool BingoBook::CreatePDF()
 	}
 
 	// Create a new page
-	HPDF_Page page = HPDF_AddPage( pdf );
+	HPDF_Page page;// = HPDF_AddPage( pdf );
 
 	// Set page size (A4)
-	HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
+	//HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
 
 	// Add table to the PDF
 	//{(HPDF_REAL)595.276, (HPDF_REAL)841.89},     /* HPDF_PAGE_SIZE_A4 */
-	float cell_size = 52;
-	this->AddTable( pdf, page, 841.89 - ((841.89 - (cell_size * 10))  / 2), (595.276 - (cell_size * 10))  / 2, cell_size );
+	float cell_size = 45;
+	//this->AddTable( pdf, page, 841.89 - ( ( 841.89 - ( cell_size * 10 ) ) / 2 ), ( 595.276 - ( cell_size * 10 ) ) / 2, cell_size );
+
+	
+
+	std::vector<std::vector<TableInfo>> tableInfo;
+
+	tableInfo.push_back( std::vector<TableInfo>() );
+	//tableInfo.back().push_back( { 841.89f - ( ( 841.89f - ( cell_size * 10 ) ) / 2 ), ( 595.276f - ( cell_size * 10 ) ) / 2, cell_size, 32 } );
+	tableInfo.back().push_back( {680.945007f, 37.6380005f, 52.0f, 32, -1.5f, 15.0f, 8.0f, 13.0f } );
+
+	tableInfo.push_back( std::vector<TableInfo>() );
+	tableInfo.back().push_back( { 810, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );
+	tableInfo.back().push_back( { 400, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );
+
+	tableInfo.push_back( std::vector<TableInfo>() );
+	tableInfo.back().push_back( { 810, 72.6380005f, 45.0f, 25, 1.3f, 11.0f, 8.5f, 12 } );
+	tableInfo.back().push_back( { 340, 72.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
+	tableInfo.back().push_back( { 340, 302.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
+
+	if ( tableInfo.size() >= bingoSheetsOnPage )
+	{
+		for ( size_t i = 0; i < numOfPages; i++ )
+		{
+			page = HPDF_AddPage( pdf );
+			HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
+
+			for ( size_t j = 0; j < bingoSheetsOnPage && j < tableInfo[ bingoSheetsOnPage - 1 ].size(); j++ )
+			{
+				this->AddTable( pdf, page, tableInfo[ bingoSheetsOnPage - 1 ][ j ] );
+			}
+		}
+	}
 
 	// Save the PDF to a file
-	const char* output_file = "D:/Development/output_table.pdf";
+	const char* output_file = "C:/Dimo/output_table.pdf";
 	HPDF_SaveToFile( pdf, output_file );
 
 	// Clean up and release resources
@@ -190,11 +221,11 @@ std::string BingoBook::GetFileLocation()
 }
 
 #include<algorithm>
-void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, float cell_size )
+void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, const TableInfo& tInfo )
 {
 	// Setting font and size
 	HPDF_Font font = HPDF_GetFont( pdf, "Helvetica", NULL );
-	HPDF_Page_SetFontAndSize( page, font, 32 );
+	HPDF_Page_SetFontAndSize( page, font, tInfo.fontSize );
 
 	// Data rows
 	std::vector<std::string> rows =	// I will make chatGPT my bitch (this array is not written by me)
@@ -239,17 +270,17 @@ void BingoBook::AddTable( HPDF_Doc pdf, HPDF_Page page, float top, float left, f
 	{
 		for ( int j = 0; j < 10 && !rows.empty(); ++j )
 		{
-			HPDF_Page_Rectangle( page, left + j * cell_size, top - ( i + 1 ) * cell_size, cell_size, cell_size );
+			HPDF_Page_Rectangle( page, tInfo.left + j * tInfo.cellSize, tInfo.top - ( i + 1 ) * tInfo.cellSize, tInfo.cellSize, tInfo.cellSize );
 			HPDF_Page_Stroke( page );
 			HPDF_Page_BeginText( page );
 
 			currentNum = GetElementsAtRandomAndExclude();
 			if( currentNum.length() < 3)
-			HPDF_Page_TextOut( page, left + j * cell_size + 8, top - ( i + 1 ) * cell_size + 13, currentNum.c_str() );
+			HPDF_Page_TextOut( page, tInfo.left + j * tInfo.cellSize + tInfo.nXMargin, tInfo.top - ( i + 1 ) * tInfo.cellSize + tInfo.nYMargin, currentNum.c_str() );
 			else
 			{
 				//HPDF_Page_SetFontAndSize( page, font, 32 );
-				HPDF_Page_TextOut( page, left + j * cell_size - 1.5, top - ( i + 1 ) * cell_size + 15, currentNum.c_str() );
+				HPDF_Page_TextOut( page, tInfo.left + j * tInfo.cellSize + tInfo.hXMargin, tInfo.top - ( i + 1 ) * tInfo.cellSize + + tInfo.hYMargin, currentNum.c_str() );
 				//HPDF_Page_SetFontAndSize( page, font, 40 );
 			}
 			HPDF_Page_EndText( page );
