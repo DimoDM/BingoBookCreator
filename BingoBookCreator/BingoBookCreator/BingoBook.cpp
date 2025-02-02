@@ -27,9 +27,9 @@ void BingoBook::SetNumOfPages( size_t pagesCount )
 
 void BingoBook::SetSheetsOnPage( size_t sheetsCount )
 {
-	while ( sheetsCount <= 0 || sheetsCount > 4 )
+	while ( sheetsCount <= 0 || sheetsCount > 6 )
 	{
-		std::cout << "Enter the number of sheets on page that will be from 1 to 4: ";
+		std::cout << "Enter the number of sheets on page that will be from 1 to 6: ";
 		std::cin >> sheetsCount;
 	}
 	this->bingoSheetsOnPage = sheetsCount;
@@ -67,50 +67,78 @@ bool BingoBook::CreatePDF()
 		return false;
 	}
 
-	// Create a new page
-	HPDF_Page page;// = HPDF_AddPage( pdf );
+	HPDF_Page				page;
+	std::vector<TableInfo>	tableInfo;
 
-	// Set page size (A4)
-	//HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
+	switch ( bingoSheetsOnPage )
+	{
+		case 1:
+		{
+			tableInfo.push_back( {680.945007f, 37.6380005f, 52.0f, 32, -1.5f, 15.0f, 8.0f, 13.0f } );
+			break;
+		}
+		case 2:
+		{
+			tableInfo.push_back( { 810, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );
+			tableInfo.push_back( { 400, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );;
+			break;
+		}
+		case 3:
+		{
+			tableInfo.push_back( { 810, 72.6380005f, 45.0f, 25, 1.3f, 11.0f, 8.5f, 12 } );
+			tableInfo.push_back( { 340, 72.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 340, 302.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
+			break;
+		}
+		case 4:
+		{
+			tableInfo.push_back( { 750, 30.0f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 750, 307.6f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 465, 307.6f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 465, 30.0f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			break;
+		}
+		case 5:
+		{
+			tableInfo.push_back( { 820, 23.0f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 820, 304.6f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 535, 304.6f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 535, 23.0f, 27.0f, 15, 0.0f, 8.0f, 5.4f, 8 } );
+			tableInfo.push_back( { 257, 178.0f, 24.0f, 13, 0.5f, 7.5f, 5.0f, 7 } );
+			break;
+		}
+		case 6:
+		{
+			tableInfo.push_back( { 810, 42.0f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
+			tableInfo.push_back( { 810, 304.6f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
 
-	// Add table to the PDF
-	//{(HPDF_REAL)595.276, (HPDF_REAL)841.89},     /* HPDF_PAGE_SIZE_A4 */
-	float cell_size = 45;
-	//this->AddTable( pdf, page, 841.89 - ( ( 841.89 - ( cell_size * 10 ) ) / 2 ), ( 595.276 - ( cell_size * 10 ) ) / 2, cell_size );
+			tableInfo.push_back( { 545, 304.6f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
+			tableInfo.push_back( { 545, 42.0f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
 
-	
+			tableInfo.push_back( { 280, 304.6f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
+			tableInfo.push_back( { 280, 42.0f, 25.0f, 13, 0.8f, 8.0f, 5.4f, 7 } );
+			break;
+		}
+		default:
+			break;
+	}
 
-	std::vector<std::vector<TableInfo>> tableInfo;
-
-	tableInfo.push_back( std::vector<TableInfo>() );
-	//tableInfo.back().push_back( { 841.89f - ( ( 841.89f - ( cell_size * 10 ) ) / 2 ), ( 595.276f - ( cell_size * 10 ) ) / 2, cell_size, 32 } );
-	tableInfo.back().push_back( {680.945007f, 37.6380005f, 52.0f, 32, -1.5f, 15.0f, 8.0f, 13.0f } );
-
-	tableInfo.push_back( std::vector<TableInfo>() );
-	tableInfo.back().push_back( { 810, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );
-	tableInfo.back().push_back( { 400, 107.638f, 38.0f, 20, 1.3f, 11.0f, 8.5f, 12 } );
-
-	tableInfo.push_back( std::vector<TableInfo>() );
-	tableInfo.back().push_back( { 810, 72.6380005f, 45.0f, 25, 1.3f, 11.0f, 8.5f, 12 } );
-	tableInfo.back().push_back( { 340, 72.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
-	tableInfo.back().push_back( { 340, 302.6380005f, 22.0f, 10, 1.8f, 8.0f, 5.4f, 8 } );
-
-	if ( tableInfo.size() >= bingoSheetsOnPage )
+	if ( tableInfo.size() == bingoSheetsOnPage )
 	{
 		for ( size_t i = 0; i < numOfPages; i++ )
 		{
 			page = HPDF_AddPage( pdf );
 			HPDF_Page_SetSize( page, HPDF_PAGE_SIZE_A4, HPDF_PAGE_PORTRAIT );
 
-			for ( size_t j = 0; j < bingoSheetsOnPage && j < tableInfo[ bingoSheetsOnPage - 1 ].size(); j++ )
+			for ( size_t j = 0; j < bingoSheetsOnPage; j++ )
 			{
-				this->AddTable( pdf, page, tableInfo[ bingoSheetsOnPage - 1 ][ j ] );
+				this->AddTable( pdf, page, tableInfo[ j ] );
 			}
 		}
 	}
 
 	// Save the PDF to a file
-	const char* output_file = "C:/Dimo/output_table.pdf";
+	const char* output_file = location.c_str();
 	HPDF_SaveToFile( pdf, output_file );
 
 	// Clean up and release resources
