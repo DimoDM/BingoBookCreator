@@ -33,8 +33,8 @@
 #include "include/hpdf_namedict.h"
 #include "include/hpdf_objects.h"
 #include "include/hpdf_outline.h"
-#include "include/hpdf_pages.h"
 #include "include/hpdf_page_label.h"
+#include "include/hpdf_pages.h"
 #include "include/hpdf_pdfa.h"
 #include "include/hpdf_streams.h"
 #include "include/hpdf_types.h"
@@ -42,6 +42,4 @@
 #include "include/hpdf_utils.h"
 #include "include/hpdf_version.h"
 
-
-#endif //PCH_H
-
+#endif // PCH_H

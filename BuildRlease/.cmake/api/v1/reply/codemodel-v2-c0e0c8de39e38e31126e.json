@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BingoBookCreator",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BingoBookCreator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BingoBookCreator-Debug-619ee78b92cf20f0895a.json",
+					"name" : "BingoBookCreator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pdf_support::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pdf_support-Debug-81f752e762226ecf5b54.json",
+					"name" : "pdf_support",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+		"source" : "/home/Dimo/Files/Development/BingoBook/BingoBookCreator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

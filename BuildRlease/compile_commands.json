@@ -1,0 +1,368 @@
+[
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_3dmeasure.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_3dmeasure.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_3dmeasure.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_3dmeasure.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_annotation.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_annotation.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_annotation.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_annotation.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_array.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_array.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_array.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_array.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_binary.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_binary.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_binary.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_binary.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_boolean.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_boolean.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_boolean.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_boolean.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_catalog.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_catalog.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_catalog.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_catalog.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_destination.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_destination.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_destination.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_destination.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_dict.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_dict.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_dict.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_dict.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_direct.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_direct.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_direct.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_direct.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc_png.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc_png.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc_png.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_doc_png.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cns.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cns.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cns.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cns.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cnt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cnt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cnt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_cnt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_jp.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_jp.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_jp.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_jp.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_kr.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_kr.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_kr.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_kr.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_utf.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_utf.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_utf.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encoder_utf.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encrypt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encrypt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encrypt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encrypt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encryptdict.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encryptdict.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encryptdict.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_encryptdict.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_error.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_error.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_error.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_error.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_exdata.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_exdata.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_exdata.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_exdata.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_ext_gstate.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_ext_gstate.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_ext_gstate.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_ext_gstate.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_cid.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_cid.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_cid.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_cid.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_tt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_tt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_tt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_tt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_type1.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_type1.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_type1.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_font_type1.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_base14.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_base14.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_base14.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_base14.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cid.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cid.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cid.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cid.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cns.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cns.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cns.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cns.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cnt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cnt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cnt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_cnt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_jp.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_jp.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_jp.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_jp.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_kr.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_kr.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_kr.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_kr.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_tt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_tt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_tt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_tt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_type1.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_type1.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_type1.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_fontdef_type1.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_gstate.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_gstate.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_gstate.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_gstate.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_ccitt.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_ccitt.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_ccitt.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_ccitt.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_png.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_png.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_png.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_image_png.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_info.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_info.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_info.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_info.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_list.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_list.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_list.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_list.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_mmgr.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_mmgr.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_mmgr.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_mmgr.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_name.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_name.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_name.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_name.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_namedict.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_namedict.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_namedict.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_namedict.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_null.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_null.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_null.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_null.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_number.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_number.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_number.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_number.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_objects.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_objects.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_objects.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_objects.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_outline.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_outline.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_outline.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_outline.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_label.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_label.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_label.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_label.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_operator.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_operator.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_operator.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_page_operator.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pages.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pages.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pages.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pages.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pdfa.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pdfa.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pdfa.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_pdfa.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_real.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_real.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_real.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_real.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_shading.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_shading.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_shading.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_shading.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_streams.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_streams.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_streams.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_streams.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_string.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_string.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_string.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_string.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_u3d.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_u3d.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_u3d.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_u3d.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_utils.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_utils.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_utils.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_utils.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/gcc -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -o CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_xref.c.o -c /home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_xref.c",
+  "file": "/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_xref.c",
+  "output": "CMakeFiles/pdf_support.dir/home/Dimo/Files/Development/BingoBook/PDF_Support/Source/hpdf_xref.c.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/g++ -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -std=gnu++17 -o CMakeFiles/BingoBookCreator.dir/BingoBookCreator/BingoBook.cpp.o -c /home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator/BingoBook.cpp",
+  "file": "/home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator/BingoBook.cpp",
+  "output": "CMakeFiles/BingoBookCreator.dir/BingoBookCreator/BingoBook.cpp.o"
+},
+{
+  "directory": "/home/Dimo/Files/Development/BingoBook/BuildRlease",
+  "command": "/usr/bin/g++ -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator -I/home/Dimo/Files/Development/BingoBook/BingoBookCreator/../PDF_Support/Include -g -std=gnu++17 -o CMakeFiles/BingoBookCreator.dir/BingoBookCreator/main.cpp.o -c /home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator/main.cpp",
+  "file": "/home/Dimo/Files/Development/BingoBook/BingoBookCreator/BingoBookCreator/main.cpp",
+  "output": "CMakeFiles/BingoBookCreator.dir/BingoBookCreator/main.cpp.o"
+}
+]

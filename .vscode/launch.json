@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "BingoBookCreator",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "/home/Dimo/Files/Development/BingoBook/BuildRlease/BingoBookCreator",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "/home/Dimo/Files/Development/BingoBook/Build Release/",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb"
+		}
+	]
+}

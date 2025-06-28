@@ -1,0 +1,4 @@
+/home/Dimo/Files/Development/BingoBook/BuildRlease/CMakeFiles/pdf_support.dir
+/home/Dimo/Files/Development/BingoBook/BuildRlease/CMakeFiles/BingoBookCreator.dir
+/home/Dimo/Files/Development/BingoBook/BuildRlease/CMakeFiles/edit_cache.dir
+/home/Dimo/Files/Development/BingoBook/BuildRlease/CMakeFiles/rebuild_cache.dir
