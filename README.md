@@ -23,15 +23,15 @@ The game proceeds as follows:
 ---
 # Requirements and supporting platforms
 
-I'm a bit lazy, so in this repository, you'll only find a solution file with project files for Visual Studio. My setup specifications are as follows:
+For Windows my setup specifications are as follows:
 
 
 1. Visual Studio Community 2022 (64-bit), version 17.12.0
 2. Windows 10 Pro 22H2
 3. C++ 20
+and you can build it using the sln file with Visual Studio
 
-
-If you're a Linux user, I’ve handled the Windows-specific parts in the laziest way possible. Instead of using a file save dialog, the window where you choose where to save the PDF is replaced by manually entering the file path and name (e.g., somepath/output.pdf).
+If you're a Linux user, I’ve handled the Windows-specific parts in the laziest way possible. Instead of using a file save dialog, the window where you choose where to save the PDF is replaced by manually entering the file path and name (e.g., somepath/output.pdf). Also you can build it using the CMakeLists.txt and my vscode configuration
 
 As for the PDF library I use, you can find the link to it in the Acknowledgments section below, along with a ready CMake and installation guide to help you build it.
 
